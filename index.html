@@ -1,0 +1,8 @@
+<div id="map"></div>
+<script>
+navigator.geolocation.getCurrentPosition(position => {
+    const {latitude, longtitude} = position.coords;
+
+    map.innerHTML = '<iframe width="700" height ="700" src="https://maps.google.com/maps?q='latitude+','+longtitude+'&amp;z=15amp;output=embed"></iframe>';
+});
+</script>
