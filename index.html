@@ -1,11 +1,14 @@
+
+
 <body>
+    <script>
+        var gong = new Audio('/sound/gong.wav');
+        
+        function onplay() {
+            gong.play();
+        }
+        </script>
+        
 <button onclick="onplay()">Play</button>
 </body>
 
-<script>
-var gong = new Audio('/sound/gong.wav');
-
-function onplay() {
-    gong.play();
-}
-</script>
